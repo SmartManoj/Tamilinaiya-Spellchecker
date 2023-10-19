@@ -13,7 +13,7 @@ $ python3 -m pip install --upgrade tamilinayavaani>=0.1
 ## Usage - in-memory
  An in-memory use of the library would look like,
 ```python3
-    from tamilinaiyavaani import SpellChecker
+    from tamilinayavaani import SpellChecker
     flag,suggs=SpellChecker.REST_interface('வாழை','பழம்')
     expected=['வாழைப்', 'பழம்']
     assert not flag
@@ -23,7 +23,7 @@ $ python3 -m pip install --upgrade tamilinayavaani>=0.1
 ## Usage - file-based
  An file-based use of the library would look like,
 ```python3
-    from tamilinaiyavaani import SpellChecker, SpellCheckerResult
+    from tamilinayavaani import SpellChecker, SpellCheckerResult
     result = SpellChecker(fname).run() #fname is a full filename
     # result is a list of SpellCheckerResult objects.
 ```
